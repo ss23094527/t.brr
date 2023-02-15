@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 手機版縮放 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 首頁logo -->
+	<link rel="shortcut icon" href="./img/logo - 1.png" type="image/logo">
+	<title>COMMISION | 委託列表</title>
+
+	<!-- css連結 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link href="css/commision.css" rel="stylesheet">
+	<link rel='stylesheet' href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+
+
+	<!-- Back to top button -->
+	<div class="top">
+		<a href="#">
+			<img src="img/top.png" alt="">
+		</a>
+	</div>
+
+
+	<!-- 漢堡選單 -->
+
+	<nav class="navbar sticky-top navbar-expand-lg bg-light ">
+
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html"><img src="img/logo - 1.png"></a>
+			<button class="ham hamRotate ham1" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<!--漢堡icon-->
+				<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80"
+					onclick="this.classList.toggle('active')">
+					<path class="line top"
+						d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+					<path class="line middle" d="m 30,50 h 40" />
+					<path class="line bottom"
+						d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+				</svg>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link  " aria-current="page" href="about.html">ABOUT US</a>
+					</li>
+					<li class="nav-item dropdown  ">
+						<a class="nav-link active dropdown-toggle " href="commision.html" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							COMMISION
+						</a>
+						<ul class="dropdown-menu dropdown-menu-dark  animate__animated animate__fadeIn">
+							<li><a class="dropdown-item" href="commision.html">委託列表</a></li>
+							<li><a class="dropdown-item" href="#">人設立繪</a></li>
+							<li><a class="dropdown-item" href="#">頭像委託</a></li>
+							<li><a class="dropdown-item" href="#">Q版委託</a></li>
+							<li><a class="dropdown-item" href="#">吊飾印製</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="#">更多...</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="q&a.html">Q&A</a>
+					</li>
+				</ul>
+
+				<nav class="navbar bg-light ">
+					<form action="">
+						<div class="p-1 bg-light rounded rounded-pill shadow-sm col-md-10 ">
+							<div class="input-group">
+								<input type="search" placeholder="作品/繪師名稱" aria-describedby="button-addon1"
+									class="form-control border-0 bg-light">
+								<div class="input-group-append">
+									<button id="button-addon1" type="submit" class="btn btn-link text-muted"><i
+											class="fa fa-search"></i></button>
+								</div>
+							</div>
+						</div>
+					</form>
+					<a href="signin.html" class="btn btn-outline-secondary me-3">SIGN IN/UP</a>
+
+				</nav>
+			</div>
+		</div>
+	</nav>
+
+	<!--main-->
+
+
+
+	<section class="list  text-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-3 my-2" current-page="1"><a href="#" data-bs-toggle="collapse"
+					data-bs-target="#filter-form" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation"
+						class="d-block d-md-none w-100 bg-light text-muted rounded px-3 py-2 mb-3 collapsed listt"><i class="fa fa-code"></i>
+						類別選單
+					</a>
+					<div id="filter-form" class="collapse d-md-block">
+						<div class="form-group"><label for="search-keyword" class="font-weight-bold">
+								搜尋你喜歡的繪師
+							</label> <input id="search-keyword" type="text" placeholder="請輸入關鍵字" class="form-control">
+							<small class="form-text text-white-50">可搜尋繪師、委託名稱</small>
+						</div>
+						<div class="form-group"><label class="font-weight-bold">類別</label>
+							<div class="dropdown bootstrap-select show-tick form-control bg-white shadow-sm"><select
+									multiple="multiple" title="類別" class="form-control selectpicker bg-light shadow-sm"
+									tabindex="null">
+									<option value="icon">
+										頭像 (1287)
+									</option>
+									<option value="Lie">
+										立繪 (547)
+									</option>
+									<option value="qq">
+										Q版 (472)
+									</option>
+									<option value="Charm">
+										吊飾 (140)
+									</option>
+									<option value="design">
+										平面設計 (440)
+									</option>
+									<option value="Watermark">
+										浮水印(101)
+									</option>
+
+
+								</select>
+
+								<div class="dropdown-menu"
+									style="max-height: 300.802px; overflow: hidden; min-height: 116px;">
+									<div class="inner show" role="listbox" id="bs-select-1" tabindex="-1"
+										aria-multiselectable="true"
+										style="max-height: 264.802px; overflow-y: auto; min-height: 98px;">
+										<ul class="dropdown-menu inner show" role="presentation"
+											style="margin-top: 0px; margin-bottom: 0px;">
+											<li><a role="option" class="dropdown-item" id="bs-select-1-0" tabindex="0"
+													aria-selected="false"><span
+														class=" bs-ok-default check-mark"></span><span class="text">
+														頭像 (1287)
+													</span></a></li>
+											<li><a role="option" class="dropdown-item" id="bs-select-1-1" tabindex="0"
+													aria-selected="false"><span
+														class=" bs-ok-default check-mark"></span><span class="text">
+														立繪 (547)
+													</span></a></li>
+											<li><a role="option" class="dropdown-item" id="bs-select-1-2" tabindex="0"
+													aria-selected="false"><span
+														class=" bs-ok-default check-mark"></span><span class="text">
+														Q版 (472)
+													</span></a></li>
+											<li><a role="option" class="dropdown-item" id="bs-select-1-3" tabindex="0"
+													aria-selected="false"><span
+														class=" bs-ok-default check-mark"></span><span class="text">
+														吊飾 (140)
+													</span></a></li>
+											<li><a role="option" class="dropdown-item" id="bs-select-1-4" tabindex="0"
+													aria-selected="false"><span
+														class=" bs-ok-default check-mark"></span><span class="text">
+														平面設計 (440)
+													</span></a></li>
+											<li><a role="option" class="dropdown-item" id="bs-select-1-5" tabindex="0"
+													aria-selected="false"><span
+														class=" bs-ok-default check-mark"></span><span class="text">
+														浮水印(101)
+													</span></a></li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group mt-4"><label class="font-weight-bold">篩選條件</label>
+							<div class="custom-control custom-checkbox mb-2 text-white-30"><input id="creators-filter1"
+									type="checkbox" class="custom-control-input"> <label for="creators-filter1"
+									class="custom-control-label">
+									有發起委託
+								</label></div>
+							<div class="custom-control custom-checkbox mb-2 text-white-30 "><input
+									id="creators-filter-avatar" type="checkbox" class="custom-control-input"> <label
+									for="creators-filter-avatar" class="custom-control-label">
+									有人評價
+								</label></div>
+							<div class="custom-control custom-checkbox mb-2 text-white-30"><input
+									id="creators-filter-enable-store" type="checkbox" class="custom-control-input">
+								<label for="creators-filter-enable-store" class="custom-control-label">
+									有開通金流
+								</label>
+							</div>
+							<div class="custom-control custom-checkbox mb-2 text-white-30"><input
+									id="creators-filter-enable-store" type="checkbox" class="custom-control-input">
+								<label for="creators-filter-enable-store" class="custom-control-label">
+									有良好積分
+								</label>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-12 col-md-9">
+					<div class="row">
+						<div class="col-6 col-lg-6 d-flex align-items-center">
+							<div class="text-white my-2">
+								顯示 1 – 9 則結果（共 2348）
+							</div>
+						</div>
+						<div class="ml-auto text-right">
+							<div class="text-muted my-2"><span class="text-white-50 small mr-1">
+									排序
+								</span>
+								<a href="#"
+									class="btn btn-link rounded-pill mr-1 py-2 px-2 flex-fill text-white-50 font-weight-bold text-decoration-none">
+									評價數
+								</a>
+								<a href="#"
+									class="btn btn-link rounded-pill mr-1 py-2 px-2 flex-fill text-white-50 font-weight-bold text-decoration-none">
+									點讚數
+								</a><a href="#"
+									class="btn btn-link rounded-pill mr-1 py-2 px-2 flex-fill text-white-50 font-weight-bold text-decoration-none">
+									收藏數
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!--委託列表-->
+					<section class="wrapper">
+						<div class="container-fostrap">
+
+							<div class=" animate__animated animate__fadeInUp content">
+								<div class="container">
+									<div class="row">
+										<div class="col-lg-4 col-6 mb-4 ">
+											<div class="card ">
+												<a class="img-card" href="https://www.instagram.com/tootoruu/">
+													<img src="img/portfolio1.png" />
+												</a>
+												<div class="card-content">
+													<h4 class="text-left card-title ">
+														<a href="#">精緻大頭貼
+														</a>
+													</h4>
+
+													<p class="text-left text-muted card-title1">
+														多綠 TOTORU
+													</p>
+												</div>
+												<div class="card-read-more">
+													<a href="https://www.instagram.com/tootoruu/"
+														class="btn btn-link btn-block text-muted">
+														更多...
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-6 mb-4">
+											<div class="card">
+												<a class="img-card"
+													href="https://www.instagram.com/tootoruu/">
+													<img src="img/portfolio2.png" />
+												</a>
+												<div class="card-content">
+													<h4 class="text-left card-title ">
+														<a
+															href="https://www.instagram.com/tootoruu/">和服驚喜包
+														</a>
+													</h4>
+													<p class="text-left text-muted card-title1">
+														布朗咖啡 BROWNCAFE
+													</p>
+												</div>
+												<div class="card-read-more">
+													<a href="#"
+														class="text-muted btn btn-link btn-block">
+														更多...
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-6 mb-4">
+											<div class="card">
+												<a class="img-card" href="https://www.instagram.com/tootoruu/">
+													<img src="img/1.svg" />
+												</a>
+												<div class="card-content">
+													<h4 class="text-left card-title">
+														<a href="#">小護士驚喜包
+														</a>
+													</h4>
+													<p class="text-left text-muted card-title1">
+														魚鰭 YUCI
+													</p>
+												</div>
+												<div class="card-read-more">
+													<a href="https://www.instagram.com/tootoruu/"
+														class="text-muted btn btn-link btn-block">
+														更多...
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-6 mb-4">
+											<div class="card">
+												<a class="img-card" href="#">
+													<img src="img/2.svg" />
+												</a>
+												<div class="card-content">
+													<h4 class="text-left card-title">
+														<a href="#">半身人物
+														</a>
+													</h4>
+													<p class="text-left text-muted card-title1">
+														三三 THREE
+													</p>
+												</div>
+												<div class="card-read-more">
+													<a href="#" class="text-muted btn btn-link btn-block">
+														更多...
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-6 mb-4">
+											<div class="card">
+												<a class="img-card" href="#">
+													<img src="img/3.svg" />
+												</a>
+												<div class="card-content">
+													<h4 class="text-left card-title">
+														<a href="#">Q版大頭
+														</a>
+													</h4>
+													<p class="text-left text-muted card-title1">
+														芋園 OEUR
+													</p>
+												</div>
+												<div class="card-read-more">
+													<a href="#" class="text-muted btn btn-link btn-block">
+														更多...
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-6 mb-4">
+											<div class="card">
+												<a class="img-card" href="https://www.instagram.com/browncofe_art/">
+													<img src="img/banner3 1.svg" />
+												</a>
+												<div class="card-content">
+													<h4 class="text-left card-title ">
+														<a href="#">生日賀卡
+														</a>
+													</h4>
+													<p class="text-left text-muted card-title1">
+														布朗咖啡 BROWNCAFE
+													</p>
+												</div>
+												<div class="card-read-more">
+													<a href="https://www.instagram.com/browncofe_art/"
+														class="text-muted btn btn-link btn-block">
+														更多...
+													</a>
+												</div>
+
+											</div>
+
+
+										</div>
+
+										<div class="col-lg-4 col-6 mb-4">
+											<div class="card">
+												<a class="img-card" href="https://www.instagram.com/browncofe_art/">
+													<img src="img/橫幅.png" />
+												</a>
+												<div class="card-content">
+													<h4 class="text-left card-title ">
+														<a href="#">橫幅設計
+														</a>
+													</h4>
+													<p class="text-left text-muted card-title1">
+														西瓜 MELON
+													</p>
+												</div>
+												<div class="card-read-more">
+													<a href="https://www.instagram.com/browncofe_art/"
+														class="text-muted btn btn-link btn-block">
+														更多...
+													</a>
+												</div>
+
+											</div>
+
+
+										</div>
+
+										<div class="col-lg-4 col-6 mb-4">
+											<div class="card">
+												<a class="img-card" href="https://www.instagram.com/browncofe_art/">
+													<img src="img/portfolio4.png" />
+												</a>
+												<div class="card-content">
+													<h4 class="text-left card-title ">
+														<a href="#">精緻插圖
+														</a>
+													</h4>
+													<p class="text-left text-muted card-title1">
+														笑笑 SMILE
+													</p>
+												</div>
+												<div class="card-read-more">
+													<a href="https://www.instagram.com/browncofe_art/"
+														class="text-muted btn btn-link btn-block">
+														更多...
+													</a>
+												</div>
+
+											</div>
+
+
+										</div>
+
+										<div class="col-lg-4 col-6 mb-4">
+											<div class="card">
+												<a class="img-card" href="https://www.instagram.com/browncofe_art/">
+													<img
+														src="img/313134882_1286249302196447_3957664277604874255_n 1.png" />
+												</a>
+												<div class="card-content">
+													<h4 class="text-left card-title ">
+														<a href="#">二創角色設計
+														</a>
+													</h4>
+													<p class="text-left text-muted card-title1">
+														多綠 TOTORU
+													</p>
+												</div>
+												<div class="card-read-more">
+													<a href="https://www.instagram.com/browncofe_art/"
+														class="text-muted btn btn-link btn-block">
+														更多...
+													</a>
+												</div>
+
+											</div>
+
+
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+
+					<div class="mt-1">
+						<nav aria-label="Page navigation">
+							<ul class="pagination justify-content-center 
+							small p-0 p-md-2">
+								<li class="page-item disabled"><a href="commision.html" class="page-link"><span
+											aria-hidden="true" >
+											«上一頁
+										</span>
+									</a></li>
+								<li class="page-item active "><a href="commision.html" class="page-link">
+										1
+									</a></li>
+								<li class="page-item "><a href="commision.html" class="page-link">
+										2
+									</a></li>
+								<li class="page-item"><a href="commision.html" class="page-link">
+										3
+									</a></li>
+								<li class="page-item"><a href="commision.html" class="page-link">
+										下一頁
+										<span aria-hidden="true">
+											»
+										</span></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<div class="footer-dark">
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-2 item">
+						<h3>關於T&Br</h3>
+						<ul>
+							<li><a href="#">平台故事</a></li>
+							<li><a href="#">繪師招募</a></li>
+							<li><a href="#">分潤須知</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-2 item">
+						<h3>委託須知</h3>
+						<ul>
+							<li><a href="#">委託項目</a></li>
+							<li><a href="#">委託流程</a></li>
+							<li><a href="#">注意事項</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-2 item">
+						<h3>會員服務</h3>
+						<ul>
+							<li><a href="#">會員管理</a></li>
+							<li><a href="#">會員中心</a></li>
+							<li><a href="#">聲明中心</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6 item text">
+						<img src="img/logo.png">
+						<p>【在T&Br. Studio 繪圖平台】<br>
+							能夠在平台上找到心儀的專屬繪師，
+							免費提供繪師刊登與委託人委託服務<br>
+							讓創作者與委託人能夠享有最大利益。</p>
+					</div>
+					<div class="col item social"><a href="https://www.facebook.com/toru.to.35"><i
+								class="icon ion-social-facebook"></i></a><a href="https://twitter.com/browncofe_512"><i
+								class="icon ion-social-twitter"></i></a><a href="#"><i
+								class="icon ion-social-snapchat"></i></a><a
+							href="https://www.instagram.com/tootoruu/"><i class="icon ion-social-instagram"></i></a>
+					</div>
+				</div>
+				<p class="copyright">Copyright ©T&Br studio</p>
+			</div>
+		</footer>
+	</div>
+
+
+	<!-- JS連結 -->
+
+	<script src="js/tutorial.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+
+	<script src="js/jQuery.js"></script>
+	<script src="js/commision.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+
+
+
+</html>

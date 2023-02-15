@@ -1,0 +1,755 @@
+@import url(//fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@font-face {
+  font-family: 'Cubic';
+  src: local("Cubic"),
+      url('../fonts/Cubic.woff') format("woff");
+}
+
+html{
+  scroll-behavior: smooth;
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1138.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1138.png), auto;
+}
+
+.body {
+  
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+
+/*往上按鈕*/
+
+.top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 99;
+}
+
+.top img {
+  width: 30px;
+}
+
+
+/*滑桿*/
+
+::-webkit-scrollbar {
+  background-color: #c9c3c3;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+  background-color: rgb(137, 132, 132);
+  border: 1px solid rgb(75, 72, 72);
+}
+
+
+
+/*動畫區*/
+
+@keyframes scaleUp {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 1.1;
+  }
+}
+
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+}
+
+@keyframes scaleDown {
+  from {
+    scale: 1.1;
+  }
+
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes typing {
+  from {
+
+    width: 1ch;
+    height: 3ch;
+  }
+
+  to {
+
+    width: 42ch;
+    height: 20ch;
+  }
+
+  from {
+
+    width: 1ch;
+    height: 3ch;
+  }
+
+  to {
+
+    width: 42ch;
+    height: 20ch;
+  }
+
+}
+
+
+/************************main***************************/
+
+/*ham*/
+
+.ham {
+  width: 50px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-style: none;
+  background-color: rgb(249, 249, 249);
+  display: none;
+}
+
+@media (max-width:990px) {
+  .ham {
+    display: block;
+  }
+
+}
+
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: rgb(85, 81, 81);
+  stroke-width: 5.0;
+  stroke-linecap: round;
+}
+
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+
+/*nav*/
+.nav {
+  margin: 0;
+  z-index: 2;
+}
+
+/*navbar*/
+
+.navbar{
+  font-family: 'Cubic';
+  font-size: 16px;
+  
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: rgb(96, 92, 92);
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+  border-radius: 5%;
+  background-color: #d3d3d3;
+  color: rgb(255, 255, 255);
+}
+
+
+/*about*/
+
+
+
+.about {
+
+  color: white;
+  height: 517px;
+  background-color: #343433;
+
+}
+
+
+
+.about-us-word {
+
+
+
+  margin-left: 3%;
+  padding-top: 5%;
+  font-family: 'Cubic';
+  font-size: 34px;
+  line-height: 49px;
+  overflow: hidden;
+  letter-spacing: 0.06em;
+  animation: fadein 5s ease-in;
+  opacity: 1;
+  transition: .6s;
+
+  color: #FFFFFF;
+}
+
+
+
+
+.icon {
+  top: 30%;
+  animation: fadein 3s ease-in;
+
+
+}
+
+.icon :hover {
+
+  transform: translateY(-2px) scale(1.1);
+  opacity: 1;
+  transition: .6s;
+}
+
+.about-us-inform {
+
+  font-family: 'Cubic';
+
+
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 44px;
+  letter-spacing: 0.055em;
+  overflow: hidden;
+  color: #FFFFFF;
+
+
+
+
+}
+
+/* button*/
+.buttons {
+
+  font-family: 'Cubic';
+
+}
+
+
+.wave {
+  width: 1280px;
+  height: 50px;
+  margin: auto;
+}
+
+/*about 平板and手機*/
+
+@media screen and (max-width: 991px) {
+
+  .about {
+
+
+    height: 600px;
+
+  }
+
+
+  .about-us-inform p {
+
+
+    font-size: 19.5px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .about {
+
+
+    height: 700px;
+
+  }
+
+
+  .about-us-inform p {
+    text-align: center;
+
+    font-size: 20px;
+  }
+
+  .buttons {
+
+    text-align: center;
+
+  }
+
+
+}
+
+
+
+/*在這裡你可以...*/
+
+.about-can {
+
+  color: white;
+  height: 600px;
+  background-color: #565454;
+  font-family: 'Cubic';
+
+}
+
+.about-can-text h1 {
+  font-size: 28px;
+  font-weight: 300;
+  margin-top: 10px;
+  padding: 4%;
+}
+
+.can-text :hover {
+
+  transform: translateY(-20px) scale(1);
+  opacity: 1;
+  transition: .6s;
+  color: #9b9b97;
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1148.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1148.png), pointer;
+
+}
+
+.can-text h3 {
+  font-size: 26px;
+}
+
+.can-text p {
+  color: #cbcbc2;
+  font-size: 13px;
+}
+
+.can-textt {
+  font-weight: 600;
+  margin-top: 20%;
+  margin-left: 20%;
+  margin-bottom: 40px;
+}
+
+.can-textt h3 {
+  font-weight: 600;
+}
+
+.can-textt2 h3 {
+  font-weight: 600;
+}
+
+
+.can-textt p {
+  font-size: 12px;
+  margin-top: 10%;
+}
+
+/*about-can 平板and手機*/
+
+@media screen and (max-width: 768px) {
+
+  .about-can {
+    height: 900px;
+  }
+
+  .can-textt {
+
+    margin-bottom: 10%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .can-textt2 {
+
+    margin-left: 0;
+    text-align: center;
+  }
+  
+
+  
+
+}
+
+@media screen and (max-width: 580px) {
+
+  .about-can {
+    height: 1700px;
+  }
+
+  .can-textt {
+
+    margin-bottom: 10%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .can-textt2 {
+
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about-can-img {
+    margin-left: 17%;
+  }
+
+
+
+}
+
+
+
+
+/*如何委託*/
+
+.how-to-page {
+
+  color: white;
+  height: 1300px;
+  background-color: #3e3e39;
+  font-family: 'Cubic';
+
+}
+
+.how-to-word p {
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+
+.how-to-img {
+
+
+  margin-right: 30%;
+}
+
+.how-to-text-2 {
+  text-align: right;
+}
+
+.stepbutton {
+
+
+  font-family: 'Cubic';
+  font-size: 15px;
+
+  border-radius: 20px;
+  height: 40px;
+  padding: 10px 10px 10px 10px;
+  background-color: #454545;
+  box-shadow: 5px 5px 5px rgb(49, 49, 49);
+
+  animation: moveToRight 1s ease-in-out;
+
+}
+
+.stepbutton2 {
+  margin-left: 40%;
+  margin-top: 70px;
+  text-align: center;
+  font-family: 'Cubic';
+  font-size: 15px;
+  width: 76px;
+  border-radius: 20px;
+  height: 40px;
+  padding: 10px 10px 10px 10px;
+  background-color: #454545;
+  box-shadow: 5px 5px 5px rgb(49, 49, 49);
+
+  animation: moveToLeft 1s ease-in-out;
+
+}
+
+/*how-to-page  平板and手機*/
+
+@media screen and (max-width: 768px) {
+
+  .how-to-page {
+    height: 1600px;
+  }
+
+
+}
+
+@media screen and (max-width: 580px) {
+
+  .how-to-page {
+    height: 1700px;
+  }
+
+
+}
+
+/*聯絡我們*/
+
+.contact-us {
+  color: white;
+  height: 1000px;
+  background-color: #20201f;
+  font-family: 'Cubic';
+
+}
+
+#contact {
+
+  overflow: auto;
+}
+
+#contact #form {
+  margin-left: 23%;
+  width: 300px;
+
+}
+
+#contact #form h2 {
+  font: 48px 'Cubic';
+}
+
+#contact #form span {
+  display: block;
+  float: center;
+  padding-bottom: 10px;
+  width: 600px;
+  padding-top: 5px;
+  font: 14px/16px 'Cubic';
+}
+
+#contact #form input {
+
+  float: left;
+  width: 600px;
+  border: 0px;
+  color: #F1F1F1;
+  padding: 10px 10px 10px 30px;
+  font: 11px/20px'Cubic';
+  margin-bottom: 10px;
+}
+
+#contact #form textarea {
+  float: center;
+  border: 0px;
+  width: 600px;
+  height: 140px;
+  padding: 10px 10px 10px 30px;
+  font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
+  color: #F1F1F1;
+  resize: none;
+}
+
+#contact #form input.name {
+  background: #ffffff url(http://img7.uploadhouse.com/fileuploads/17737/177370145f09fe433945815665aa214f80dbc6af.png) no-repeat 10px 8px;
+}
+
+#contact #form input.email {
+  background: #ffffff url(http://img6.uploadhouse.com/fileuploads/17737/177370138cc63992182149e9befabff3eafa6d23.png) no-repeat 10px 9px;
+}
+
+#contact #form input.captcha {
+  background: #ffffff url(http://img3.uploadhouse.com/fileuploads/17737/17737011310213e71805ecf2292144cbbecf42ad.png) no-repeat 10px 9px;
+}
+
+#contact #form textarea.message {
+  background: #ffffff url(http://img3.uploadhouse.com/fileuploads/17737/1773701229ed8c2f465a8274623ca8976adaf196.png) no-repeat 10px 8px;
+}
+
+#contact #form input.submit {
+  cursor: pointer;
+  width: 600px;
+  height: 30px;
+  float: center;
+  border-radius: 10%;
+  padding: 0px 0px 5px 0px;
+  margin: 10px 16px 0px 0px;
+  background: #484545;
+  color: #F1F1F1;
+  font: 14px/16px'Cubic';
+  margin-bottom: 50px;
+}
+
+#contact #captcha span {
+  width: 44px;
+}
+
+#contact #captcha input {
+  background: url(http://img3.uploadhouse.com/fileuploads/17737/17737011310213e71805ecf2292144cbbecf42ad.png) no-repeat scroll 0 0 transparent;
+  margin: 5px 0 0;
+  padding: 0;
+  border: medium none;
+  cursor: pointer;
+  width: 15px;
+}
+
+/*聯絡我們  平板and手機*/
+
+@media screen and (max-width: 768px) {
+
+  #contact #form {
+
+    margin-left: 0%;
+  }
+
+  #contact #form span {
+    width: 450px;
+  }
+
+  #contact #form input {
+
+    width: 450px;
+  }
+
+  #contact #form textarea {
+    width: 450px;
+  }
+
+  #contact #form input.submit {
+    width: 450px;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+
+
+  #contact #form {
+    margin-left: 0%;
+  }
+
+
+}
+
+/*footer*/
+.footer-dark {
+
+  padding: 50px 0;
+  color: #f0f9ff;
+  background-color: #4a4a48;
+}
+
+.footer-dark h3 {
+
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-dark p {
+  font-size: 1px;
+}
+
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom: 36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.footer-dark .item.social>a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .item.social>a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
+}
