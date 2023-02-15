@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 手機版縮放 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 首頁logo -->
+	<link rel="shortcut icon" href="./img/logo - 1.png" type="image/logo">
+	<title>Q&A</title>
+
+	<!-- css連結 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link href="css/q&a.css" rel="stylesheet">
+	<link rel='stylesheet' href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+
+
+	<!-- Back to top button -->
+	<div class="top">
+		<a href="#">
+			<img src="img/top.png" alt="">
+		</a>
+	</div>
+
+
+	<!-- 漢堡選單 -->
+
+	<nav class="navbar sticky-top navbar-expand-lg bg-light ">
+
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html"><img src="img/logo - 1.png"></a>
+			<button class="ham hamRotate ham1" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<!--漢堡icon-->
+				<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80"
+					onclick="this.classList.toggle('active')">
+					<path class="line top"
+						d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+					<path class="line middle" d="m 30,50 h 40" />
+					<path class="line bottom"
+						d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+				</svg>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " aria-current="page" href="about.html">ABOUT US</a>
+					</li>
+					<li class="nav-item dropdown ">
+						<a class="nav-link dropdown-toggle " href="commision.html" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							COMMISION
+						</a>
+						<ul class="dropdown-menu dropdown-menu-dark  animate__animated animate__fadeIn">
+							<li><a class="dropdown-item" href="commision.html">委託列表</a></li>
+							<li><a class="dropdown-item" href="#">人設立繪</a></li>
+							<li><a class="dropdown-item" href="#">頭像委託</a></li>
+							<li><a class="dropdown-item" href="#">Q版委託</a></li>
+							<li><a class="dropdown-item" href="#">吊飾印製</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="#">更多...</a></li>
+						</ul>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link active" href="q&a.html">Q&A</a>
+					</li>
+				</ul>
+				
+				<nav class="navbar bg-light ">
+					<form action="">
+						<div class="p-1 bg-light rounded rounded-pill shadow-sm col-md-10 ">
+						  <div class="input-group">
+							<input type="search" placeholder="作品/繪師名稱" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+							<div class="input-group-append">
+							  <button id="button-addon1" type="submit" class="btn btn-link text-muted"><i class="fa fa-search"></i></button>
+							</div>
+						  </div>
+						</div>
+					</form>
+					<a href="signin.html" class="btn btn-outline-secondary me-3">SIGN IN/UP</a>
+
+				</nav>
+			</div>
+		</div>
+	</nav>
+
+
+	<!--main-->
+
+	<main>
+
+
+		<div class="animate__animated animate__fadeIn container">
+			<div class="row">
+				<strong>
+					<br>
+					<h1>常見 Q & A</h1>
+				</strong>
+				<div class="topic">
+					<div class="open">
+						<h2 class="question">✧ 委託流程是甚麼?</h2>
+						<span class="faq-t"></span>
+					</div>
+					<p class="answer">基本委託流程： 討論與估價→付定金50%或是全額付款→草圖繪製→線稿→底色細節→最終微調完稿→支付尾款(分兩次付款者)→交檔案。</p>
+				</div>
+				<div class="topic">
+					<div class="open">
+						<h2 class="question">✧ 我的會員註冊不了怎麼辦?
+						</h2><span class="faq-t"></span>
+					</div>
+					<p class="answer">詳細請參閱《會員註冊》條款。</p>
+				</div>
+				<div class="topic">
+					<div class="open">
+						<h2 class="question">✧ 快到交件時間了，但委託項目還沒完成怎麼辦?
+						</h2><span class="faq-t"></span>
+					</div>
+					<p class="answer">可以聯絡繪師禮貌詢問交件時間及催件，如繪師未回覆，可以請平台介入處理。</p>
+				</div>
+				<div class="topic">
+					<div class="open">
+						<h2 class="question">✧ 委託完成的項目著作權屬於誰呢?
+						</h2><span class="faq-t"></span>
+					</div>
+					<p class="answer">
+						請注意委託項目完成交付後，著作權仍屬於創作者，創作者可無需經過委託人同意在社群網站等平台或以印製方式進行發表，但如果委託項目內包含委託者原創設計時，需事先徵得委託者同意後方得進行公開或印製。
+						在本平台進行的所有委託項目預設為委託者不得對委託成品進行販售或製作作品集、聲稱為委託者個人作品等自作發言，若該項委託項目可接受以上利用範圍，請另外寫明在委託說明內。</p>
+				</div>
+				<div class="topic">
+					<div class="open">
+						<h2 class="question">✧ 該怎麼樣付款給繪師?
+						</h2><span class="faq-t"></span>
+					</div>
+					<p class="answer">請依照繪師要求的匯款方式和繪師溝通並匯款至繪師帳號。</p>
+				</div>
+				<div class="topic">
+					<div class="open">
+						<h2 class="question">✧ 已經過了交件時間，遲遲未收到委託的成品怎麼辦?
+						</h2><span class="faq-t"></span>
+					</div>
+					<p class="answer">您可以要求平台會介入進行仲裁，詳情請參閱《服務協議》。</p>
+				</div>
+				<div class="topic">
+					<div class="open">
+						<h2 class="question">✧ 一直收不到手機驗證碼該怎麼辦?
+						</h2><span class="faq-t"></span>
+					</div>
+					<p class="answer"> A：請先確認電信業者或手機是否有申請或設定阻攔陌生來電或簡訊。
+						<br><br>
+						方法1.聯繫電信業者：
+						各家電信公司有提供拒收企業簡訊之服務，可能導致無法正常接收驗證碼簡訊，請洽詢電信公司關閉該功能(此服務關閉後，約需3-4小時作業時間後才可重新接收簡訊)。
+						<br><br>
+
+						方法2.調整手機設定
+
+						(1).iPhone系統：
+
+						「設定」>「訊息」>「過濾未知的寄件人」設定為關閉。
+
+						(2).Android系統：
+
+						各廠牌及版本操作方式有所差異，可先點選「訊息」>「設定」，確認是否關閉阻擋陌生簡訊或垃圾簡訊等功能，或是手機內是否安裝攔截app(例如：whoscall)，確認是否有設定攔截或封鎖相關廣告號碼，導致訊息發送失敗。
+						<br><br>
+						方法3.使用來電攔截等APP：
+
+						運用相關APP設定廣告號碼攔截使用系統大量發送之簡訊信息，相關簡訊可能被手機判為廣告，建議您取消設定廣告號碼攔截或封鎖，避免簡訊發送失敗
+						<br><br>
+						如使用上述操作後，仍未收到驗證簡訊，請洽客服專線：02-123-012
+					</p>
+				</div>
+				<div class="topic">
+					<div class="open">
+						<h2 class="question">✧ T&Br 網站會抽成嗎?如果會，會抽多少%?
+						</h2><span class="faq-t"></span>
+					</div>
+					<p class="answer">- 上載作品不收取任何費用。
+						<br><br>
+						- 關於委託，每次交易成功：我們向畫師收取酬金總額之15%，當中已包含第三方交易支付平台（例如Paypal）的收費。
+						<br><br>
+						- 每次從illustBuy提款至用戶指定的Paypal帳戶：100點 (相當於10
+						HKD），請於提取時參閱頁面所示。因為過程需要人手操作，我們需要7個工作天內把款項以您指定的貨幣轉帳到您指定的PayPal帳戶。我們正努力改善提款程序，並致力提供更多提款選擇。
+						<br><br>
+						詳情請參閱《平台收取費用》。
+					</p>
+				</div>
+				<div class="topic">
+					<div class="open">
+						<h2 class="question">✧ 我該怎麼聯繫繪師呢?
+						</h2><span class="faq-t"></span>
+					</div>
+					<p class="answer">可直接通過網站聊天系統聯繫，或者點進繪師的第三方帳號聯繫也可。</p>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+
+
+	<!-- footer -->
+	<div class="footer-dark">
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-2 item">
+						<h3>關於T&Br</h3>
+						<ul>
+							<li><a href="#">平台故事</a></li>
+							<li><a href="#">繪師招募</a></li>
+							<li><a href="#">分潤須知</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-2 item">
+						<h3>委託須知</h3>
+						<ul>
+							<li><a href="#">委託項目</a></li>
+							<li><a href="#">委託流程</a></li>
+							<li><a href="#">注意事項</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-2 item">
+						<h3>會員服務</h3>
+						<ul>
+							<li><a href="#">會員管理</a></li>
+							<li><a href="#">會員中心</a></li>
+							<li><a href="#">聲明中心</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6 item text">
+						<img src="img/logo.png">
+						<p>【在T&Br. Studio 繪圖平台】<br>
+							能夠在平台上找到心儀的專屬繪師，
+							免費提供繪師刊登與委託人委託服務<br>
+							讓創作者與委託人能夠享有最大利益。</p>
+					</div>
+					<div class="col item social"><a href="https://www.facebook.com/toru.to.35"><i
+								class="icon ion-social-facebook"></i></a><a href="https://twitter.com/browncofe_512"><i
+								class="icon ion-social-twitter"></i></a><a href="#"><i
+								class="icon ion-social-snapchat"></i></a><a
+							href="https://www.instagram.com/tootoruu/"><i class="icon ion-social-instagram"></i></a>
+					</div>
+				</div>
+				<p class="copyright">Copyright ©T&Br studio</p>
+			</div>
+		</footer>
+	</div>
+
+
+	<!-- JS連結 -->
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="js/tutorial.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="js/jQuery.js"></script>
+	<script src="js/qa.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+<script>
+
+	
+</script>
+
+</body>
+
+
+
+
+</html>
